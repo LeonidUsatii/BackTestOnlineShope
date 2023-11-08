@@ -1,6 +1,6 @@
 # шаг сборки - build
 # maven - это образ Linux + Maven
-FROM maven as build
+FROM maven:3.8.3-openjdk-17 as build
 # создаем папку внутри этого Linux-а и называем ее app
 WORKDIR /workspace/app
 # в эту папку копируем наш pom.xml
